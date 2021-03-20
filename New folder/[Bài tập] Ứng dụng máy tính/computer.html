@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body>
+    <input type="text" id="1">
+    <input type="text" id="2"><br><br>
+
+<button type="button" onclick="add();">Addition(+)</button>
+<button type="button" onclick="sub();">Subtraction(-)</button>
+<button type="button" onclick="mul();">Multiplication(X)</button>
+<button type="button" onclick="div();">Division(/)</button><br><br>
+    <input type="text" id="3">
+
+<script>
+    function add(a, b, sum) {
+        a = +document.getElementById('1').value;
+        b = +document.getElementById('2').value;
+        sum = a + b
+        document.getElementById('3').value = sum
+    }
+    function sub(c, d, e) {
+        c = +document.getElementById('1').value;
+        d = +document.getElementById('2').value;
+        e = c - d
+        document.getElementById('3').value = e
+    }
+    function mul(f, g, h) {
+        e = +document.getElementById('1').value;
+        f = +document.getElementById('2').value;
+        g = e*f
+        document.getElementById('3').value = g
+    }
+    function div(h, i, k) {
+        g = +document.getElementById('1').value;
+        h = +document.getElementById('2').value;
+        i = g/h
+        document.getElementById('3').value = i
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+<input type="text" id="1">
+<input type="text" id="2">
+<input type="button" onclick="area();" value="area">
+<p id="3">
+
+</p>
+    <script>
+        function area(a, b) {
+            a = document.getElementById("1").value
+            b = document.getElementById("2").value
+            document.getElementById("3").innerHTML = "Kết quả =" + a*b
+        }
+    </script>
+</body>
+</html>

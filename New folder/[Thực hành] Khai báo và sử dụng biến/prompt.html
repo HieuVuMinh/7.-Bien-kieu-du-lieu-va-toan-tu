@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prompt</title>
+</head>
+<body>
+    <input type="text" id="1">
+    <input type="text" id="2">
+    <button type="button" onclick="s();">click me</button><br><br>
+    <input type="text" style="color: blue" id="3"/>
+<script>
+    function s(a,b) {
+       a = document.getElementById('1').value
+       b = document.getElementById('2').value
+        if (a%b==0){
+            document.getElementById('3').value = 'a chia hết cho b'
+        }
+        else{
+            document.getElementById('3').value = 'a không chia hết cho b'
+        }
+    }
+</script>
+</body>
+</html>

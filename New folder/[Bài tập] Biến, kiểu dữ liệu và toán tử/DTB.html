@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm Trung Bình</title>
+</head>
+<body>
+    <input type="text" id="vatly" placeholder="Vật lý">
+    <input type="text" id="hoahoc" placeholder="Hóa học">
+    <input type="text" id="sinhhoc" placeholder="Sinh học">
+    <button type="button" onclick="tbc();">Click để chia TBC</button>
+    <input type="text" id="ketqua" placeholder="Kết quả =">
+<script>
+    function tbc(a, b, c) {
+        a = parseInt(document.getElementById('vatly').value)
+        b = parseInt(document.getElementById('hoahoc').value)
+        c = parseInt(document.getElementById('sinhhoc').value)
+        document.getElementById('ketqua').value = (a+b+c)/3
+    }
+</script>
+
+<!--    <script>-->
+<!--        let inputhoa = parseInt(prompt('nhap diem hoa'));-->
+<!--        let inputly = parseInt(prompt('nhap diem ly'));-->
+<!--        let inputsinh = parseInt(prompt('nhap diem sinh'));-->
+<!--        let tbc = inputhoa + inputly + inputsinh-->
+<!--        document.write(tbc/3)-->
+<!--    </script>-->
+</body>
+</html>

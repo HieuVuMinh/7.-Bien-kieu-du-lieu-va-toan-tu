@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<button type="button" onclick="dt();">Tinh dien tich va chu vi</button><br><br>
+<input type="text" id="2">
+<input type="text" id="3">
+
+   <script>
+       function dt(a, b, d) {
+           a = document.getElementById('1').value
+           b = a * a * 3.14;
+           d = 2*a*3.14
+           document.getElementById('2').value = "dien tich = " + b;
+           document.getElementById('3').value = "chu vi = " + d;
+       }
+   </script>
+</body>
+</html>
